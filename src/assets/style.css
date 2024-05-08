@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply font-sans;
+  }
+
+  body {
+    @apply antialiased;
+  }
+}
+
+@layer components {
+
+  #app {
+    @apply flex items-center justify-center;
+  }
+
+  .wrapper {
+    @apply min-h-screen bg-lightgrayblue grid grid-rows-layout items-center justify-items-center;
+  }
+
+  .container {
+    @apply max-w-[90%] md:max-w-3xl bg-white rounded-xl overflow-hidden;
+  }
+
+  .article-img {
+    @apply w-full h-full object-cover rounded-t-xl md:rounded-t-none md:rounded-l-xl;
+  }
+
+  .details {
+    @apply px-7 py-9;
+  }
+
+  .details h2 {
+    @apply text-lg leading-8 font-bold text-darkblue;
+  }
+
+  .details>p {
+    @apply mt-3 text-darkblue text-base text-wrap;
+  }
+
+  .article-footer {
+    @apply mt-6 mx-7 pb-7 leading-none flex justify-between;
+  }
+
+  .author-info {
+    @apply flex;
+  }
+
+  .author-info.img {
+    @apply w-11 rounded-full mr-4;
+  }
+
+  .article-footer p {
+    @apply text-sm font-bold text-darkblue;
+  }
+
+  .article-footer span {
+    @apply text-sm text-grayblue;
+  }
+
+  .share-icon {
+    @apply bg-gray-100 rounded-full px-4 flex justify-center items-center;
+  }
+
+  .attribution {
+    @apply row-start-2 row-end-3 text-[.7rem];
+  }
+}
