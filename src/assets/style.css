@@ -25,7 +25,7 @@
   }
 
   .container {
-    @apply max-w-[90%] md:max-w-3xl bg-white rounded-xl overflow-hidden;
+    @apply max-w-[90%] md:max-w-3xl bg-white rounded-xl overflow-hidden relative;
   }
 
   .article-img {
@@ -33,7 +33,7 @@
   }
 
   .details {
-    @apply px-7 py-9;
+    @apply px-7 pt-9 pb-6;
   }
 
   .details h2 {
@@ -45,7 +45,7 @@
   }
 
   .article-footer {
-    @apply mt-6 mx-7 pb-7 leading-none flex justify-between;
+    @apply mx-7 py-6 leading-none flex justify-between items-center;
   }
 
   .author-info {
@@ -65,7 +65,7 @@
   }
 
   .share-icon {
-    @apply bg-gray-100 rounded-full px-4 flex justify-center items-center;
+    @apply rounded-full px-[10px] py-[11px];
   }
 
   .attribution {
