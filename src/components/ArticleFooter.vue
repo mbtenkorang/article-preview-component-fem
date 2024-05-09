@@ -1,5 +1,6 @@
 <script setup>
 import {ref, Transition} from 'vue';
+import userAvatar from "../assets/images/avatar-michelle.jpg"
 import facebookLogo from "../assets/images/icon-facebook.svg";
 import  twitterLogo from "../assets/images/icon-twitter.svg";
 import pinterestLogo from "../assets/images/icon-pinterest.svg";
@@ -12,10 +13,6 @@ const props = defineProps({
         required: true
     },
     articledate: {
-        type: String,
-        required: true
-    },
-    avatarurl: {
         type: String,
         required: true
     }
@@ -32,7 +29,7 @@ const handleShowElement = () =>{
     <Transition name="slide">
     <div  v-if="show" class="article-footer">
         <div class="author-info">
-          <img :src="avatarurl" :alt="`${authorname}`" class="author-info img">
+          <img :src="userAvatar" :alt="`${authorname}`" class="author-info img">
             <div>
                 <p>{{ authorname }}</p>
                 <span>{{ articledate }}</span>
